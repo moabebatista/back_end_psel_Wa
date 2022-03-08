@@ -3,6 +3,6 @@ const alunos = require('./controladores/alunos');
 
 const rotas = express();
 
-rotas.get('/alunos', alunos.listarAlunos)
+rotas.get('/alunos', alunos.listarAlunos);
 
 module.exports = rotas;
