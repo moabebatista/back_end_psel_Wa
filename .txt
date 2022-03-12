@@ -2,10 +2,9 @@ Desafio Tech
 
 Proposta
 
-
  ● Desenvolver um serviço com API GraphQL e uma base de dados de alunos contendo: nome, CPF e e-mail.
 
-A API deve listar os alunos, filtrando por quaisquer dos campos, retornando todos, caso nenhum seja informado.
+    A API deve listar os alunos, filtrando por quaisquer dos campos, retornando todos, caso nenhum seja informado.
 
 
  ● Desenvolver uma UI em React que permita realizar consultas a esse serviço, consumindo e exibindo os dados retornados por ele. 

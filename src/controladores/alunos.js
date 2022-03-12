@@ -8,6 +8,7 @@ const listarAlunos = async (req, res) => {
     } catch (error) {
         return res.status(400).json(error.message);
     }
+    // res.json('Docker end Docker-Compose Sucessefull 222!');
 }
 
 module.exports = {

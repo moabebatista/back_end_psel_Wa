@@ -1,11 +1,16 @@
 const knex = require('knex')({
-    client: 'pg',
+    client: 'postgresql',
     connection: {
-      host : 'localhost',
-      port : 5432,
+      host : 'db',
       user : 'postgres',
-      password : 'postgres',
-      database : 'escola'
+      password : 'postgres'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
     }
   });
 

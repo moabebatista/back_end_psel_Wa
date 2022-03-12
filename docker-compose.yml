@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: "service-api"
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+     - .:/usr/app
+    links:
+      - db
+    depends_on:
+      - db
+    environment:
+      DB_HOST: host.docker.internal
+      DB_USER: postgres
+      DB_PASS: postgres
+  db:
+    image: postgres:alpine
+    container_name: api-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
