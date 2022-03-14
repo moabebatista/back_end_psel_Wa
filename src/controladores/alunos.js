@@ -8,9 +8,34 @@ const listarAlunos = async (req, res) => {
     } catch (error) {
         return res.status(400).json(error.message);
     }
-    // res.json('Docker end Docker-Compose Sucessefull 222!');
+}
+
+const buscarAluno = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const aluno = [];
+
+        const alunoNome = await knex('alunos').where({ nome: id}).first();
+        const alunoCpf = await knex('alunos').where({ cpf: id}).first();
+        const alunoEmail = await knex('alunos').where({ email: id}).first();
+
+        if(alunoNome) aluno.push(alunoNome);
+
+        if(alunoCpf) aluno.push(alunoCpf);
+
+        if(alunoEmail) aluno.push(alunoEmail);
+
+        if (!alunoNome && !alunoCpf && !alunoEmail ) return res.status(400).json("Aluno não encontrado!");
+
+        res.json(aluno[0]);
+
+    } catch (error) {
+        return res.status(400).json(error.message);
+    }
 }
 
 module.exports = {
-    listarAlunos
+    listarAlunos,
+    buscarAluno
 }
