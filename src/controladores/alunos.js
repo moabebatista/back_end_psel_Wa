@@ -28,7 +28,7 @@ const buscarAluno = async (req, res) => {
 
         if (!alunoNome && !alunoCpf && !alunoEmail ) return res.status(400).json("Aluno não encontrado!");
 
-        res.json(aluno[0]);
+        res.json(aluno);
 
     } catch (error) {
         return res.status(400).json(error.message);
