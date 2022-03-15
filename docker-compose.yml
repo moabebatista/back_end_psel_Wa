@@ -6,7 +6,7 @@ services:
     container_name: "service-api"
     command: npm start
     ports:
-      - "3000:3000"
+      - "3333:3333"
     volumes:
      - .:/usr/app
     links:
