@@ -16,6 +16,7 @@ O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e
 
 - O projeto irá iniciar com o `nodemon` e apresentará o seguinte resultado no terminal:
 
+##### - Atenção o `nodemon` pode estar not found, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
 
 > service-api| > back_end_psel_wa@1.0.0 start
 service-api | > nodemon ./src/index.js
@@ -25,6 +26,8 @@ service-api | [nodemon] to restart at any time, enter `rs`
 service-api | [nodemon] watching path(s): *.*
 service-api | [nodemon] watching extensions: js,mjs,json
 service-api | [nodemon] starting `node ./src/index.js`
+
+##### - Importante: ao executar o projeto o `nodemon` pode retornar not found, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
 
 - Após isto você deverá proceder com a criação da tabela alunos no banco de dado postgreSQL que foi criado, dica: utilize o `beequeper` ou outra tecnologia que esteja mais familizarizado.
 
