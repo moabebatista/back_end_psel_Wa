@@ -20,8 +20,6 @@ O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e
 
 ##### - Atenção o `nodemon` pode estar `not found`, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
 
-##### - Importante: ao executar o projeto o `nodemon` pode retornar not found, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
-
 - Após isto você deverá proceder com a criação da tabela alunos no banco de dado postgreSQL que foi criado, dica: utilize o `beequeper` ou outra tecnologia que esteja mais familizarizado.
 
 - O nome do banco criado é `postgres` e a senha também é `postgres` tanto a criação da tabela quanto os dados dos alunos que serão inseridos, encontam-se no arquivo `squema.sql` na raiz do projeto.
