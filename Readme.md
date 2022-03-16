@@ -28,7 +28,7 @@ service-api | [nodemon] starting `node ./src/index.js`
 
 - Após isto você deverá proceder com a criação da tabela alunos no banco de dado postgreSQL que foi criado, dica: utilize o `beequeper` ou outra tecnologia que esteja mais familizarizado.
 
-- o nome do banco criado é `postgres` e a senha também é `postgres` tanto a criação da tabela quanto os dados dos alunos que serão inseridos, encontam-se no arquivo `squema.sql` na raiz do projeto.
+- O nome do banco criado é `postgres` e a senha também é `postgres` tanto a criação da tabela quanto os dados dos alunos que serão inseridos, encontam-se no arquivo `squema.sql` na raiz do projeto.
 
 - Feito tudo isso você pode fazer as requisições utilizando as rotas especificadas no arquivo `rotas` na pasta `src`.
 
