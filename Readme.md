@@ -16,16 +16,9 @@ O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e
 
 - O projeto irá iniciar com o `nodemon` e apresentará o seguinte resultado no terminal:
 
-##### - Atenção o `nodemon` pode estar not found, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
+[](![image](https://user-images.githubusercontent.com/83438974/158681850-8873d389-9842-4a1f-836b-362cc882cb32.png)
 
-> service-api| > back_end_psel_wa@1.0.0 start
-service-api | > nodemon ./src/index.js
-service-api | 
-service-api | [nodemon] 2.0.15
-service-api | [nodemon] to restart at any time, enter `rs`
-service-api | [nodemon] watching path(s): *.*
-service-api | [nodemon] watching extensions: js,mjs,json
-service-api | [nodemon] starting `node ./src/index.js`
+##### - Atenção o `nodemon` pode estar `not found`, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
 
 ##### - Importante: ao executar o projeto o `nodemon` pode retornar not found, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
 
@@ -41,7 +34,8 @@ service-api | [nodemon] starting `node ./src/index.js`
 
 - `http://localhost:3333/alunos`
     - resposta:
-    > [
+```json 
+ [
   {
     "id": 1,
     "nome": "José Emanuel da Silva",
@@ -115,10 +109,12 @@ service-api | [nodemon] starting `node ./src/index.js`
     "email": "g_lopes@email.com"
   }
 ]
+```
 
 - pesquisando por cpf: `http://localhost:3333/alunos/01098230399`
     - resposta:
-    > [
+```json
+[
   {
     "id": 12,
     "nome": "Garcia Lopes Santos da Silva",
@@ -126,10 +122,11 @@ service-api | [nodemon] starting `node ./src/index.js`
     "email": "g_lopes@email.com"
   }
 ]
-
+```
 - pesquisando por nome: `http://localhost:3333/alunos/Marcos Ribeiro`
     - resposta:
-    > [
+```json
+[
   {
     "id": 10,
     "nome": "Marcos Ribeiro",
@@ -137,10 +134,12 @@ service-api | [nodemon] starting `node ./src/index.js`
     "email": "marcos_riba@email.com"
   }
 ]
+```
 
 - pesquisando por email: `http://localhost:3333/alunos/marta123@email.com`
     - resposta:
-    > [
+ ```json
+ [
   {
     "id": 3,
     "nome": "Marta Costa da Silva",
@@ -148,4 +147,4 @@ service-api | [nodemon] starting `node ./src/index.js`
     "email": "marta123@email.com"
   }
 ]
-
+```
