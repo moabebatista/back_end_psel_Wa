@@ -1,11 +1,11 @@
-####API Rest e base de dados de alunos contendo: 
+#### API Rest e base de dados de alunos contendo: 
 - nome 
 - CPF
 - e-mail
 
 O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e padrão `REST`.
 
-####Como inicializar o projeto?
+#### Como inicializar o projeto?
 
 - Faça o Fork do repositório do projeto e clone-o em sua máquina.
 
@@ -32,7 +32,7 @@ service-api | [nodemon] starting `node ./src/index.js`
 
 - Feito tudo isso você pode fazer as requisições utilizando as rotas especificadas no arquivo `rotas` na pasta `src`.
 
-####Exemplo de requisições:
+#### Exemplo de requisições:
 
 - Dica: utilize o `insominia` para fazer as reuisições.
 
