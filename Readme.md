@@ -1,18 +1,19 @@
-#### API Rest e base de dados de alunos contendo: 
+
+## API Rest e base de dados de alunos contendo: 
 - nome 
 - CPF
 - e-mail
 
-O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e padrão `REST`.
+##### O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e padrão `REST`.
 
-#### Como inicializar o projeto?
+## Como inicializar o projeto com DOCKER?
 
 - Faça o Fork do repositório do projeto e clone-o em sua máquina.
 
 - Certifique-se que tenha instalado em sua máquina as versões do `docker` e `docker-compose` caso não os tenha instale-os [clicando aqui](https://docs.docker.com/desktop/windows/install/).
 - Tendo certeza que tanto o `docker` quanto `docker-compose` estão instalados em sua máquina utilize o seguinte comando: `docker-compose up` em seu terminal, preferencialmente, no `terminal do vscode`
 
-- A partir daí serão geradas as imagens docker tanto da api rest quanto do banco de dados que no caso é o `PostgreSQL`.
+- A partir daí serão geradas as imagens docker tanto da api rest quanto do banco de dados que no caso é estamos usando `PostgreSQL`.
 
 - O projeto irá iniciar com o `nodemon` e apresentará o seguinte resultado no terminal:
 
@@ -20,9 +21,9 @@ O presente projeto foi desenvolvido com `NodeJs`, `Express.js`, `Knex`, `cors` e
 
 ##### - Atenção o `nodemon` pode estar `not found`, se isto ocorrer execute o comando `npm install nodemon --save-dev` e resolverá o problema.
 
-- Após isto você deverá proceder com a criação da tabela alunos no banco de dado postgreSQL que foi criado, dica: utilize o `beequeper` ou outra tecnologia que esteja mais familizarizado.
+- Agora devemos ser capazes de nos conectar ao banco de dados usando uma ferramenta como `Beekeeper Studio`, `DBeaver`, `pgAdmin` ou outra tecnologia que esteja mais familizarizado.
 
-- O nome do banco criado é `postgres` e a senha também é `postgres` tanto a criação da tabela quanto os dados dos alunos que serão inseridos, encontam-se no arquivo `squema.sql` na raiz do projeto.
+- Utilize o usuario `postgres` e a senha `postgres` estando conectado você verá que foi criado um banco de dados como nome `postgres`, sendo assim crie a tabela alunos e insira os dados fakes. As instruções de Criação da Tabela e Inserção dos dados dos alunos encontran-se no arquivo `squema.sql` na raiz do projeto.
 
 - Feito tudo isso você pode fazer as requisições utilizando as rotas especificadas no arquivo `rotas` na pasta `src`.
 
